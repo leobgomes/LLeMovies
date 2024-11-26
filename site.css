@@ -1,7 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
 }
 
 body {
@@ -16,12 +16,12 @@ body {
 }
 
 .navbar .navbar-brand {
-    color: #e50914;
+    color: #824be7;
     font-weight: bold;
 }
 
 .navbar .nav-item .nav-link {
-    color: #e50914;
+    color: #824be7;
 }
 
 .scrolled {
@@ -29,10 +29,11 @@ body {
 }
 
 .carousel-inner {
-    max-height: 100vh;
+    height: 100vh;
 }
-,.carousel-inner .carousel-item img {
-    max-height: 100vh;
+
+.carousel-inner .carousel-item img {
+    height: 100vh;
     object-fit: cover;
 }
 
@@ -42,16 +43,53 @@ body {
     width: 100%;
     left: 0;
     padding-left: 100px;
-    padding-right:  100px;
-
-}  
+    padding-right: 100px;
+}
 
 .carousel-caption h3 {
-    color: #e50914;
-    font-weight:  bolder;
+    color: #824be7;
+    font-weight: bolder;
     font-size: 32px;
+}
+
+@media only screen and (max-width: 500px) {
+    .carousel-caption h3 {
+        font-size: 20px;
+    }
 }
 
 .carousel-caption p {
     color: #ffffff;
 }
+ 
+.rowposter {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.rowposter a {
+    cursor: inherit;
+}
+
+.rowimg {
+    margin-right: 10px;
+    border-radius: 20px;
+    box-sizing: content-box;
+    transition: transform 450ms;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.rowimg:hover {
+    transform: scale(1.10);
+}
+
+.rowposter::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+

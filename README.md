@@ -1,2 +1,2 @@
-# LLeMovies
-projeto de apresentação de informação de filmes, desenvolvidos em html//css/javascript 
+# GMovies
+Projeto de apresentação de informações de filmes, desenvolvimento em html/css/javascript
